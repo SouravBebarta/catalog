@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    database-platform : org.hibernate.dialect.H2Dialect
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:catalog
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+
+server:
+  error:
+    include-stacktrace: always
+  port: 8087
